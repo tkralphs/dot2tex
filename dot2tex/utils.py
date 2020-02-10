@@ -96,7 +96,7 @@ def is_multiline_label(drawobject):
         return False
 
     label = getattr(drawobject, "label", "")
-    return any(x in label for x in [r"\n", r"\l", r"\r"])
+    return any(x in label for x in [r"\n", r"\r"])
 
 
 class EndOfGraphElement(object):
